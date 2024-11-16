@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>SpinQuest</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="" name="keywords" />
+        <meta content="" name="description" />
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Ubuntu:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div
+                class="spinner-border text-primary"
+                style="width: 3rem; height: 3rem"
+                role="status"
+            >
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-light p-0">
+            <div class="row gx-0 d-none d-lg-flex">
+                <div class="col-lg-7 px-5 text-start">
+                    <div
+                        class="h-100 d-inline-flex align-items-center py-3 me-4"
+                    >
+                        <small
+                            class="fa fa-map-marker-alt text-primary me-2"
+                        ></small>
+                        <small
+                            >12 Eileen Rd, Clayton South VIC 3169,
+                            Australia</small
+                        >
+                    </div>
+                    <div class="h-100 d-inline-flex align-items-center py-3">
+                        <small class="far fa-clock text-primary me-2"></small>
+                        <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+                    </div>
+                </div>
+                <div class="col-lg-5 px-5 text-end">
+                    <div
+                        class="h-100 d-inline-flex align-items-center py-3 me-4"
+                    >
+                        <small
+                            class="fa fa-phone-alt text-primary me-2"
+                        ></small>
+                        <small>+61390686040</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar Start -->
+        <nav
+            class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0"
+        >
+            <a
+                href="index.html"
+                class="navbar-brand d-flex align-items-center px-4 px-lg-5"
+            >
+                <h2 class="m-0 text-primary">SpinQuest</h2>
+            </a>
+            <button
+                type="button"
+                class="navbar-toggler me-4"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link active"
+                        >Catalog</a
+                    >
+                    <a href="testimonial.html" class="nav-item nav-link"
+                        >Testimonials</a
+                    >
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Page Header Start -->
+        <div
+            class="container-fluid page-header mb-5 p-0"
+            style="background-image: url(img/carousel-bg-1.jpg)"
+        >
+            <div class="container-fluid page-header-inner py-5">
+                <div class="container text-center">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">
+                        Catalog
+                    </h1>
+                    <nav aria-label="breadcrumb">
+                        <ol
+                            class="breadcrumb justify-content-center text-uppercase"
+                        >
+                            <li class="breadcrumb-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li
+                                class="breadcrumb-item text-white active"
+                                aria-current="page"
+                            >
+                                Catalog
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <!-- Blog Start -->
+        <div
+            id="blog"
+            class="container-xxl"
+            style="margin-top: 100px; max-width: 900px; margin-bottom: 120px"
+        >
+            <div class="container" style="padding: 50px 1px">
+                <div class="row g-4">
+                    <div
+                        class="col-md-6 col-sm-12 wow fadeInUp blog-li"
+                        data-wow-delay="0.1s"
+                    >
+                        <div
+                            class="rounded overflow-hidden"
+                            style="
+                                background-color: #ffffff;
+                                padding: 15px 15px 30px;
+                            "
+                        >
+                            <div class="position-relative">
+                                <img
+                                    class="img-fluid"
+                                    src="img/about-5.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-center p-4 mt-2">
+                                <h5 class="mb-3">PUEBLA PARADE</h5>
+                                <p>⭐⭐⭐⭐⭐</p>
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-primary"
+                                    id="triggerImage5"
+                                >
+                                    Play Now
+                                </button>
+                                <div
+                                    class="iframe-container"
+                                    id="iframeContainer5"
+                                >
+                                    <div class="iframe-content">
+                                        <button
+                                            class="close-btn"
+                                            id="closeBtn5"
+                                        >
+                                            X
+                                        </button>
+                                        <iframe
+                                            class="iframe"
+                                            frameborder="0"
+                                            scrolling="auto"
+                                            allowfullscreen=""
+                                            loading="lazy"
+                                            src="https://asccw.playngonetwork.com/casino/ContainerLauncher?pid=2&gid=pueblaparade&lang=en_GB&practice=1&channel=desktop&demo=2"
+                                        ></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-md-6 col-sm-12 wow fadeInUp blog-li"
+                        data-wow-delay="0.1s"
+                    >
+                        <div
+                            class="rounded overflow-hidden"
+                            style="
+                                background-color: #ffffff;
+                                padding: 15px 15px 30px;
+                            "
+                        >
+                            <div class="position-relative">
+                                <img
+                                    class="img-fluid"
+                                    src="img/about-6.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-center p-4 mt-2">
+                                <h5 class="mb-3">BUILDIN’ BUCKS</h5>
+                                <p>⭐⭐⭐⭐⭐</p>
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-primary"
+                                    id="triggerImage6"
+                                >
+                                    Play Now
+                                </button>
+                                <div
+                                    class="iframe-container"
+                                    id="iframeContainer6"
+                                >
+                                    <div class="iframe-content">
+                                        <button
+                                            class="close-btn"
+                                            id="closeBtn6"
+                                        >
+                                            X
+                                        </button>
+                                        <iframe
+                                            class="iframe"
+                                            frameborder="0"
+                                            scrolling="auto"
+                                            allowfullscreen=""
+                                            loading="lazy"
+                                            src="https://asccw.playngonetwork.com/casino/ContainerLauncher?pid=2&gid=buildinbucks&lang=en_GB&practice=1&channel=desktop&demo=2"
+                                        ></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-md-6 col-sm-12 wow fadeInUp blog-li"
+                        data-wow-delay="0.1s"
+                    >
+                        <div
+                            class="rounded overflow-hidden"
+                            style="
+                                background-color: #ffffff;
+                                padding: 15px 15px 30px;
+                            "
+                        >
+                            <div class="position-relative">
+                                <img
+                                    class="img-fluid"
+                                    src="img/about-4.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-center p-4 mt-2">
+                                <h5 class="mb-3">BARON: LORD OF SATURDAY</h5>
+                                <p>⭐⭐⭐⭐⭐</p>
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-primary"
+                                    id="triggerImage4"
+                                >
+                                    Play Now
+                                </button>
+                                <div
+                                    class="iframe-container"
+                                    id="iframeContainer4"
+                                >
+                                    <div class="iframe-content">
+                                        <button
+                                            class="close-btn"
+                                            id="closeBtn4"
+                                        >
+                                            X
+                                        </button>
+                                        <iframe
+                                            class="iframe"
+                                            frameborder="0"
+                                            scrolling="auto"
+                                            allowfullscreen=""
+                                            loading="lazy"
+                                            src="https://asccw.playngonetwork.com/casino/ContainerLauncher?pid=2&gid=baronlordofsaturday&lang=en_GB&practice=1&channel=desktop&demo=2"
+                                        ></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-md-6 col-sm-12 wow fadeInUp blog-li"
+                        data-wow-delay="0.1s"
+                    >
+                        <div
+                            class="rounded overflow-hidden"
+                            style="
+                                background-color: #ffffff;
+                                padding: 15px 15px 30px;
+                            "
+                        >
+                            <div class="position-relative">
+                                <img
+                                    class="img-fluid"
+                                    src="img/about-7.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-center p-4 mt-2">
+                                <h5 class="mb-3">GRIM MUERTO</h5>
+                                <p>⭐⭐⭐⭐⭐</p>
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-primary"
+                                    id="triggerImage7"
+                                >
+                                    Play Now
+                                </button>
+                                <div
+                                    class="iframe-container"
+                                    id="iframeContainer7"
+                                >
+                                    <div class="iframe-content">
+                                        <button
+                                            class="close-btn"
+                                            id="closeBtn7"
+                                        >
+                                            X
+                                        </button>
+                                        <iframe
+                                            class="iframe"
+                                            frameborder="0"
+                                            scrolling="auto"
+                                            allowfullscreen=""
+                                            loading="lazy"
+                                            src="https://asccw.playngonetwork.com/casino/ContainerLauncher?pid=2&gid=grimmuerto&lang=en_GB&practice=1&channel=desktop&demo=2"
+                                        ></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-md-6 col-sm-12 wow fadeInUp blog-li"
+                        data-wow-delay="0.1s"
+                    >
+                        <div
+                            class="rounded overflow-hidden"
+                            style="
+                                background-color: #ffffff;
+                                padding: 15px 15px 30px;
+                            "
+                        >
+                            <div class="position-relative">
+                                <img
+                                    class="img-fluid"
+                                    src="img/about-3.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-center p-4 mt-2">
+                                <h5 class="mb-3">RAGING REX 3</h5>
+                                <p>⭐⭐⭐⭐⭐</p>
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-primary"
+                                    id="triggerImage3"
+                                >
+                                    Play Now
+                                </button>
+                                <div
+                                    class="iframe-container"
+                                    id="iframeContainer3"
+                                >
+                                    <div class="iframe-content">
+                                        <button
+                                            class="close-btn"
+                                            id="closeBtn3"
+                                        >
+                                            X
+                                        </button>
+                                        <iframe
+                                            class="iframe"
+                                            frameborder="0"
+                                            scrolling="auto"
+                                            allowfullscreen=""
+                                            loading="lazy"
+                                            src="https://asccw.playngonetwork.com/casino/ContainerLauncher?pid=2&gid=ragingrex3&lang=en_GB&practice=1&channel=desktop&demo=2"
+                                        ></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-md-6 col-sm-12 wow fadeInUp blog-li"
+                        data-wow-delay="0.1s"
+                    >
+                        <div
+                            class="rounded overflow-hidden"
+                            style="
+                                background-color: #ffffff;
+                                padding: 15px 15px 30px;
+                            "
+                        >
+                            <div class="position-relative">
+                                <img
+                                    class="img-fluid"
+                                    src="img/about-8.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-center p-4 mt-2">
+                                <h5 class="mb-3">CHRONOS JOKER</h5>
+                                <p>⭐⭐⭐⭐⭐</p>
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-primary"
+                                    id="triggerImage8"
+                                >
+                                    Play Now
+                                </button>
+                                <div
+                                    class="iframe-container"
+                                    id="iframeContainer8"
+                                >
+                                    <div class="iframe-content">
+                                        <button
+                                            class="close-btn"
+                                            id="closeBtn8"
+                                        >
+                                            X
+                                        </button>
+                                        <iframe
+                                            class="iframe"
+                                            frameborder="0"
+                                            scrolling="auto"
+                                            allowfullscreen=""
+                                            loading="lazy"
+                                            src="https://asccw.playngonetwork.com/casino/ContainerLauncher?pid=2&gid=chronosjoker&lang=en_GB&practice=1&channel=desktop&demo=2"
+                                        ></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-md-6 col-sm-12 wow fadeInUp blog-li"
+                        data-wow-delay="0.1s"
+                    >
+                        <div
+                            class="rounded overflow-hidden"
+                            style="
+                                background-color: #ffffff;
+                                padding: 15px 15px 30px;
+                            "
+                        >
+                            <div class="position-relative">
+                                <img
+                                    class="img-fluid"
+                                    src="img/about-2.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-center p-4 mt-2">
+                                <h5 class="mb-3">MOUNT M</h5>
+                                <p>⭐⭐⭐⭐⭐</p>
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-primary"
+                                    id="triggerImage2"
+                                >
+                                    Play Now
+                                </button>
+                                <div
+                                    class="iframe-container"
+                                    id="iframeContainer2"
+                                >
+                                    <div class="iframe-content">
+                                        <button
+                                            class="close-btn"
+                                            id="closeBtn2"
+                                        >
+                                            X
+                                        </button>
+                                        <iframe
+                                            class="iframe"
+                                            frameborder="0"
+                                            scrolling="auto"
+                                            allowfullscreen=""
+                                            loading="lazy"
+                                            src="https://asccw.playngonetwork.com/casino/ContainerLauncher?pid=2&gid=mountm&lang=en_GB&practice=1&channel=desktop&demo=2"
+                                        >
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-md-6 col-sm-12 wow fadeInUp blog-li"
+                        data-wow-delay="0.1s"
+                    >
+                        <div
+                            class="rounded overflow-hidden"
+                            style="
+                                background-color: #ffffff;
+                                padding: 15px 15px 30px;
+                            "
+                        >
+                            <div class="position-relative">
+                                <img
+                                    class="img-fluid"
+                                    src="img/about-9.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-center p-4 mt-2">
+                                <h5 class="mb-3">JOKER FLIP</h5>
+                                <p>⭐⭐⭐⭐⭐</p>
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-primary"
+                                    id="triggerImage9"
+                                >
+                                    Play Now
+                                </button>
+                                <div
+                                    class="iframe-container"
+                                    id="iframeContainer9"
+                                >
+                                    <div class="iframe-content">
+                                        <button
+                                            class="close-btn"
+                                            id="closeBtn9"
+                                        >
+                                            X
+                                        </button>
+                                        <iframe
+                                            class="iframe"
+                                            frameborder="0"
+                                            scrolling="auto"
+                                            allowfullscreen=""
+                                            loading="lazy"
+                                            src="https://asccw.playngonetwork.com/casino/ContainerLauncher?pid=2&gid=jokerflip&lang=en_GB&practice=1&channel=desktop&demo=2"
+                                        >
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-md-6 col-sm-12 wow fadeInUp blog-li"
+                        data-wow-delay="0.1s"
+                    >
+                        <div
+                            class="rounded overflow-hidden"
+                            style="
+                                background-color: #ffffff;
+                                padding: 15px 15px 30px;
+                            "
+                        >
+                            <div class="position-relative">
+                                <img
+                                    class="img-fluid"
+                                    src="img/about-10.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-center p-4 mt-2">
+                                <h5 class="mb-3">ROCCO GALLO</h5>
+                                <p>⭐⭐⭐⭐⭐</p>
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-primary"
+                                    id="triggerImage10"
+                                >
+                                    Play Now
+                                </button>
+                                <div
+                                    class="iframe-container"
+                                    id="iframeContainer10"
+                                >
+                                    <div class="iframe-content">
+                                        <button
+                                            class="close-btn"
+                                            id="closeBtn10"
+                                        >
+                                            X
+                                        </button>
+                                        <iframe
+                                            class="iframe"
+                                            frameborder="0"
+                                            scrolling="auto"
+                                            allowfullscreen=""
+                                            loading="lazy"
+                                            src="https://asccw.playngonetwork.com/casino/ContainerLauncher?pid=2&gid=roccogallo&lang=en_GB&practice=1&channel=desktop&demo=2"
+                                        >
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-md-6 col-sm-12 wow fadeInUp blog-li"
+                        data-wow-delay="0.1s"
+                    >
+                        <div
+                            class="rounded overflow-hidden"
+                            style="
+                                background-color: #ffffff;
+                                padding: 15px 15px 30px;
+                            "
+                        >
+                            <div class="position-relative">
+                                <img
+                                    class="img-fluid"
+                                    src="img/about-1.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-center p-4 mt-2">
+                                <h5 class="mb-3">BEASTS OF FIRE MAXIMUM</h5>
+                                <p>⭐⭐⭐⭐⭐</p>
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-primary"
+                                    id="triggerImage1"
+                                >
+                                    Play Now
+                                </button>
+                                <div
+                                    class="iframe-container"
+                                    id="iframeContainer1"
+                                >
+                                    <div class="iframe-content">
+                                        <button
+                                            class="close-btn"
+                                            id="closeBtn1"
+                                        >
+                                            X
+                                        </button>
+                                        <iframe
+                                            class="iframe"
+                                            frameborder="0"
+                                            scrolling="auto"
+                                            allowfullscreen=""
+                                            loading="lazy"
+                                            src="https://asccw.playngonetwork.com/casino/ContainerLauncher?pid=2&gid=beastsoffiremaximum&lang=en_GB&practice=1&channel=desktop&demo=2"
+                                        >
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+        <!-- Booking Start -->
+        <div
+            class="container-fluid bg-secondary booking my-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+        >
+            <div class="container">
+                <div class="row gx-5">
+                    <div class="col-lg-6 py-5">
+                        <div class="py-5">
+                            <h1 class="text-white mb-4">
+                                Start Your Gaming Journey Today
+                            </h1>
+                            <p class="text-white mb-0">
+                                Are you ready to dive into the world of online
+                                casino gaming? Booking a service with us is your
+                                first step toward maximizing your gaming
+                                experience. Our team of professionals is
+                                dedicated to guiding you through the exciting
+                                and dynamic world of online casino games,
+                                offering tailored solutions that fit your gaming
+                                preferences. Whether you're interested in the
+                                latest slot games, poker tournaments, or
+                                understanding how to maximize your play, we
+                                offer a range of services designed to enhance
+                                your gaming experience. By booking a service,
+                                you gain access to expert insights into popular
+                                casino games and strategies that can improve
+                                your chances of success. We’ll help you navigate
+                                the thrilling world of online gaming with
+                                sustainable and enjoyable strategies. Don’t wait
+                                to get started—book your session today and take
+                                the first step toward an unforgettable gaming
+                                adventure.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div
+                            class="bg-primary h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn"
+                            data-wow-delay="0.6s"
+                        >
+                            <h1 class="text-white mb-4">
+                                Book For A Gaming Session
+                            </h1>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-12 col-sm-12">
+                                        <input
+                                            type="text"
+                                            class="form-control border-0"
+                                            placeholder="Your Name"
+                                            style="height: 55px"
+                                        />
+                                    </div>
+                                    <div class="col-12 col-sm-12">
+                                        <input
+                                            type="email"
+                                            class="form-control border-0"
+                                            placeholder="Your Email"
+                                            id="email"
+                                            style="height: 55px"
+                                        />
+                                        <div
+                                            id="result"
+                                            style="color: red"
+                                        ></div>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea
+                                            class="form-control border-0"
+                                            placeholder="Special Request"
+                                        ></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button
+                                            class="btn btn-secondary w-100 py-3"
+                                            type="submit"
+                                            id="submit"
+                                            onclick="sendForm()"
+                                        >
+                                            Book Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Booking End -->
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="text-light mb-4">SpinQuest</h4>
+                        <p>
+                            Dive into the exciting world of casino gaming with
+                            SpinQuest. Whether you're a fan of thrilling slot
+                            games or classic table games, we bring you endless
+                            entertainment and opportunities to win big. Get
+                            ready to embark on a gaming journey like no other!
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="text-light mb-4">Address</h4>
+                        <p class="mb-2">
+                            <i class="fa fa-map-marker-alt me-3"></i>12 Eileen
+                            Rd, Clayton South VIC 3169, Australia
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-phone-alt me-3"></i>+61390686040
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-envelope me-3"></i
+                            >spin_quest@gmail.com
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="text-light mb-4">Quick links</h4>
+                        <ul style="list-style: none; padding-left: 0px">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="terms-of-use.html">Terms</a></li>
+                            <li>
+                                <a href="privacy-policy.html">Privacy policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+            ><i class="bi bi-arrow-up"></i
+        ></a>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Cookie Consent</h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    This website uses cookies to provide you with a superior and
+                    more relevant browsing experience on the site.
+                    <a href="#">Learn more...</a>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Accept</button>
+                <button class="cookie-button" id="declineBtn">Decline</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/contact-form.js"></script>
+        <script src="js/cookiebanner.js"></script>
+    </body>
+</html>
